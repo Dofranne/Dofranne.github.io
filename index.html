@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dofranne</title>
+  <link rel="icon" href="icono.png">
+  <style>
+    :root { --fondo: #ffffff; --texto: #1d2430; --suave: #5b6676; --acento: #3d7a0f; --borde: #e3e7ee; }
+    @media (prefers-color-scheme: dark) {
+      :root { --fondo: #0b0f17; --texto: #e6ebf2; --suave: #8a96a8; --acento: #8fd14f; --borde: #232c3b; }
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--fondo); color: var(--texto);
+           font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+    main { max-width: 680px; margin: 0 auto; padding: 48px 16px; }
+    header { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; }
+    header img { width: 72px; height: 72px; border-radius: 18px; }
+    h1 { margin: 0; font-size: 2rem; }
+    .lema { margin: 0; color: var(--suave); }
+    h2 { font-size: 1.15rem; margin-top: 32px; }
+    a { color: var(--acento); }
+    footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--borde); color: var(--suave); font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="icono.png" alt="Avatar de Dofranne">
+    <div>
+      <h1>Dofranne</h1>
+      <p class="lema">Asistente personal de inteligencia artificial</p>
+    </div>
+  </header>
+
+  <p>Dofranne es un asistente personal que funciona en una Raspberry Pi en casa de su dueño.
+     Conversa por voz y por texto, recuerda datos, consulta el clima, crea recordatorios y
+     controla el computador de su dueño.</p>
+
+  <h2>Uso de Google</h2>
+  <p>Con el permiso explícito de su dueño, Dofranne se conecta a su cuenta de Google para:</p>
+  <ul>
+    <li><strong>Gmail:</strong> avisar de correos nuevos, leerlos y resumirlos en voz alta,
+        buscarlos y enviar correos que el dueño dicta y confirma.</li>
+    <li><strong>Google Calendar:</strong> consultar la agenda y crear eventos.</li>
+  </ul>
+  <p>Es un proyecto personal y no comercial: lo usa únicamente su dueño, con su propia cuenta.</p>
+
+  <p><a href="privacidad.html">Política de privacidad</a></p>
+
+  <footer>Dofranne · Proyecto personal · <a href="https://github.com/Dofranne">github.com/Dofranne</a></footer>
+</main>
+</body>
+</html>
